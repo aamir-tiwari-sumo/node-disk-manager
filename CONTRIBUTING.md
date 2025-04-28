@@ -12,7 +12,7 @@ NDM uses the standard GitHub pull requests process to review and accept contribu
 
 NDM is an Apache 2.0 Licensed project and all your commits should be signed with Developer Certificate of Origin. See [Sign your work](#sign-your-work). 
 
-* Find an issue to work on or create a new issue. The issues are maintained at [openebs/openebs](https://github.com/openebs/openebs/issues?q=is%3Aissue+is%3Aopen+label%3Andm). You can pick up from a list of [good-first-issues](https://github.com/openebs/node-disk-manager/labels/good%20first%20issue).
+* Find an issue to work on or create a new issue. The issues are maintained at [openebs/openebs](https://github.com/openebs/openebs/issues?q=is%3Aissue+is%3Aopen+label%3Andm). You can pick up from a list of [good-first-issues](https://github.com/aamir-tiwari-sumo/node-disk-manager/labels/good%20first%20issue).
 * Claim your issue by commenting your intent to work on it to avoid duplication of efforts. 
 * Fork the repository on GitHub.
 * Create a branch from where you want to base your work (usually develop).

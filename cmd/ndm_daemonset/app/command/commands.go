@@ -19,10 +19,10 @@ package command
 import (
 	goflag "flag"
 
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
-	"github.com/openebs/node-disk-manager/pkg/features"
-	"github.com/openebs/node-disk-manager/pkg/util"
-	"github.com/openebs/node-disk-manager/pkg/version"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/features"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/version"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"

@@ -23,8 +23,8 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/openebs/node-disk-manager/integration_tests/k8s"
-	"github.com/openebs/node-disk-manager/integration_tests/utils"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/k8s"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/utils"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"

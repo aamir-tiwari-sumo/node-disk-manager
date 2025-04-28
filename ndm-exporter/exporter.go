@@ -19,10 +19,10 @@ package ndm_exporter
 import (
 	"fmt"
 
-	"github.com/openebs/node-disk-manager/db/kubernetes"
-	"github.com/openebs/node-disk-manager/ndm-exporter/collector"
-	"github.com/openebs/node-disk-manager/pkg/server"
-	"github.com/openebs/node-disk-manager/pkg/version"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/db/kubernetes"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/ndm-exporter/collector"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/server"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/version"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"k8s.io/klog/v2"

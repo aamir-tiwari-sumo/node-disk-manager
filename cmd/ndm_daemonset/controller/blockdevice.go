@@ -25,8 +25,8 @@ import (
 	"k8s.io/client-go/util/jsonpath"
 	"k8s.io/klog/v2"
 
-	apis "github.com/openebs/node-disk-manager/api/v1alpha1"
-	bd "github.com/openebs/node-disk-manager/blockdevice"
+	apis "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	bd "github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

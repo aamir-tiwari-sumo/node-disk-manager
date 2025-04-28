@@ -19,13 +19,13 @@ package probe
 import (
 	"k8s.io/klog/v2"
 
-	"github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
-	"github.com/openebs/node-disk-manager/pkg/epoll"
-	"github.com/openebs/node-disk-manager/pkg/features"
-	"github.com/openebs/node-disk-manager/pkg/mount"
-	"github.com/openebs/node-disk-manager/pkg/mount/libmount"
-	"github.com/openebs/node-disk-manager/pkg/util"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/epoll"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/features"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/mount"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/mount/libmount"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
 )
 
 // mountProbe contains required variables for populating diskInfo

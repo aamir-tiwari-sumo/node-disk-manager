@@ -28,7 +28,7 @@ import (
 	"github.com/diskfs/go-diskfs"
 	"github.com/diskfs/go-diskfs/disk"
 	"github.com/diskfs/go-diskfs/filesystem"
-	"github.com/openebs/node-disk-manager/integration_tests/utils"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/utils"
 )
 
 // Disk and system attributes corresponding to backing image and

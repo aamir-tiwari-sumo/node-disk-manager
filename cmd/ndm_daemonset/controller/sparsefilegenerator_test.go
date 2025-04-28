@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/openebs/node-disk-manager/pkg/util"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
 	"github.com/stretchr/testify/assert"
 )
 

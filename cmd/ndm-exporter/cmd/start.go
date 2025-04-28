@@ -17,8 +17,8 @@ limitations under the License.
 package cmd
 
 import (
-	"github.com/openebs/node-disk-manager/ndm-exporter"
-	"github.com/openebs/node-disk-manager/pkg/util"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/ndm-exporter"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
 	"github.com/spf13/cobra"
 )
 

@@ -17,7 +17,7 @@ limitations under the License.
 package probe
 
 import (
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
 	"k8s.io/klog/v2"
 )
 

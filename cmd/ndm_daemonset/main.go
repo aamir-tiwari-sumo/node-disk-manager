@@ -21,8 +21,7 @@ import (
 
 	"k8s.io/klog/v2"
 
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/app/command"
-	ndmlogger "github.com/openebs/node-disk-manager/pkg/logs"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/app/command"
 )
 
 func main() {
@@ -37,9 +36,6 @@ func run() error {
 	// initialize the global klog flags. This need to be done explicitly as init() method
 	// is no longer used to register the flags
 	klog.InitFlags(nil)
-	// Init logging
-	ndmlogger.InitLogs()
-	defer ndmlogger.FlushLogs()
 
 	// Create & execute new command
 	cmd, err := command.NewNodeDiskManager()

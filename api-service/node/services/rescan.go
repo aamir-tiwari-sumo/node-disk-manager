@@ -16,9 +16,9 @@ package services
 import (
 	"context"
 
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/probe"
-	protos "github.com/openebs/node-disk-manager/spec/ndm"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/probe"
+	protos "github.com/aamir-tiwari-sumo/node-disk-manager/spec/ndm"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

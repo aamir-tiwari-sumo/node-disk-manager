@@ -17,7 +17,7 @@ limitations under the License.
 package k8s
 
 import (
-	"github.com/openebs/node-disk-manager/integration_tests/utils"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/utils"
 	appsv1 "k8s.io/api/apps/v1"
 	v1 "k8s.io/api/core/v1"
 	rbacv1 "k8s.io/api/rbac/v1"

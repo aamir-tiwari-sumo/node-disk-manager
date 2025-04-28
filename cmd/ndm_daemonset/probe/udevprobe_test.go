@@ -21,10 +21,10 @@ import (
 	"sync"
 	"testing"
 
-	apis "github.com/openebs/node-disk-manager/api/v1alpha1"
-	"github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
-	libudevwrapper "github.com/openebs/node-disk-manager/pkg/udev"
+	apis "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
+	libudevwrapper "github.com/aamir-tiwari-sumo/node-disk-manager/pkg/udev"
 	"github.com/stretchr/testify/assert"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
@@ -133,7 +133,7 @@ func TestFillDiskDetails(t *testing.T) {
 	}
 
 	// The devlinks are compared separately as the ordering of devlinks can be different in some systems
-	// eg: ubuntu 20.04 in github actions
+	// eg: ubuntu 25.04 in github actions
 	assert.True(t, compareDevLinks(expectedDiskInfo.DevLinks, actualDiskInfo.DevLinks))
 
 	// The devlinks are made nil since they are already compared

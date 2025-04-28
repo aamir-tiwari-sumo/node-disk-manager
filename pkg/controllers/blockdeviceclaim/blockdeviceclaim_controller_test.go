@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/openebs/node-disk-manager/db/kubernetes"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/db/kubernetes"
 
-	openebsv1alpha1 "github.com/openebs/node-disk-manager/api/v1alpha1"
-	ndm "github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
+	openebsv1alpha1 "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	ndm "github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
 
 	"github.com/stretchr/testify/assert"
 	corev1 "k8s.io/api/core/v1"

@@ -17,7 +17,6 @@ limitations under the License.
 package logs
 
 import (
-	"flag"
 	"log"
 	"time"
 
@@ -28,13 +27,6 @@ import (
 
 var logFlushFreq = pflag.Duration("log-flush-frequency", 5*time.Second, "Maximum number of seconds between log flushes")
 
-// TODO(thockin): This is temporary until we agree on log dirs and put those into each cmd.
-func init() {
-	err := flag.Set("logtostderr", "true")
-	if err != nil {
-		klog.Errorf("unable to set flag, Error: %v", err)
-	}
-}
 
 // KlogWriter serves as a bridge between the standard log package and the klog package.
 type KlogWriter struct{}

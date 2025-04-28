@@ -12,7 +12,7 @@ keywords:
   - disk-inventory
   - storage
 sources:
-  - https://github.com/openebs/node-disk-manager
+  - https://github.com/aamir-tiwari-sumo/node-disk-manager
 maintainers:
   - name: akhilerm
     email: akhil.mohan@mayadata.io

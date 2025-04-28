@@ -19,7 +19,7 @@ package cmd
 import (
 	goflag "flag"
 	"fmt"
-	ndm_exporter "github.com/openebs/node-disk-manager/ndm-exporter"
+	ndm_exporter "github.com/aamir-tiwari-sumo/node-disk-manager/ndm-exporter"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"os"

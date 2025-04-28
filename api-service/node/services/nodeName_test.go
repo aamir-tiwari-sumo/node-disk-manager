@@ -18,7 +18,7 @@ import (
 	"os"
 	"testing"
 
-	protos "github.com/openebs/node-disk-manager/spec/ndm"
+	protos "github.com/aamir-tiwari-sumo/node-disk-manager/spec/ndm"
 )
 
 // TestName tests Name service

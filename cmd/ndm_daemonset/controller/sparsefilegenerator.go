@@ -20,8 +20,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/pkg/util"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
 	"k8s.io/klog/v2"
 
 	"fmt"

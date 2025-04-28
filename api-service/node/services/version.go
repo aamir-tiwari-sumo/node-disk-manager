@@ -16,9 +16,9 @@ package services
 import (
 	"context"
 
-	"github.com/openebs/node-disk-manager/api-service/node"
-	"github.com/openebs/node-disk-manager/pkg/version"
-	protos "github.com/openebs/node-disk-manager/spec/ndm"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/api-service/node"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/version"
+	protos "github.com/aamir-tiwari-sumo/node-disk-manager/spec/ndm"
 
 	"k8s.io/klog/v2"
 )

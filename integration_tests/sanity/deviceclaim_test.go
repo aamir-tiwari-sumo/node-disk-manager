@@ -19,9 +19,9 @@ package sanity
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	apis "github.com/openebs/node-disk-manager/api/v1alpha1"
-	"github.com/openebs/node-disk-manager/integration_tests/k8s"
-	"github.com/openebs/node-disk-manager/integration_tests/udev"
+	apis "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/k8s"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/udev"
 	"k8s.io/apimachinery/pkg/api/resource"
 	"os"
 )

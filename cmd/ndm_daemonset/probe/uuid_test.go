@@ -20,9 +20,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/pkg/features"
-	"github.com/openebs/node-disk-manager/pkg/util"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/features"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
 	"github.com/stretchr/testify/assert"
 )
 

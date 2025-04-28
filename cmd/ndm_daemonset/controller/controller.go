@@ -33,9 +33,9 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
 
-	apis "github.com/openebs/node-disk-manager/api/v1alpha1"
-	"github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/pkg/util"
+	apis "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
 )
 
 const (
@@ -144,7 +144,7 @@ func NewController() (*Controller, error) {
 	}
 	controller.Namespace = ns
 
-	mgr, err := manager.New(controller.config, manager.Options{Namespace: controller.Namespace, MetricsBindAddress: "0"})
+	mgr, err := manager.New(controller.config, manager.Options{})
 	if err != nil {
 		return controller, err
 	}

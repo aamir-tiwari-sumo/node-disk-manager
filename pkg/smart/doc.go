@@ -23,7 +23,7 @@ of SCSI disks such as vendor,serial, model, firmware revision, logical sector si
 
 Usage:
 
-	import "github.com/openebs/node-disk-manager/pkg/smart"
+	import "github.com/aamir-tiwari-sumo/node-disk-manager/pkg/smart"
 
 S.M.A.R.T. (Self-Monitoring, Analysis and Reporting Technology; often written as SMART) is
 a monitoring system included in computer hard disk drives (HDDs), solid-state drives (SSDs),
@@ -59,7 +59,7 @@ import (
 	"fmt"
 
 	"k8s.io/klog/v2"
-	"github.com/openebs/node-disk-manager/pkg/smart"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/smart"
 
 )
 

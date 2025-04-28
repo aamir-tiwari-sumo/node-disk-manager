@@ -17,7 +17,7 @@ import (
 	"context"
 	"strings"
 
-	protos "github.com/openebs/node-disk-manager/spec/ndm"
+	protos "github.com/aamir-tiwari-sumo/node-disk-manager/spec/ndm"
 
 	"github.com/mitchellh/go-ps"
 	"google.golang.org/grpc/codes"

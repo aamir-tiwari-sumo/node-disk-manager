@@ -17,8 +17,8 @@ limitations under the License.
 package setup
 
 // import (
-// 	apis "github.com/openebs/node-disk-manager/api/v1alpha1"
-// 	"github.com/openebs/node-disk-manager/pkg/crds"
+// 	apis "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+// 	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/crds"
 // 	apiext "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 // )
 

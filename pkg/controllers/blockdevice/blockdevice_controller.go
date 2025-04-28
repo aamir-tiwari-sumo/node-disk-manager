@@ -18,7 +18,7 @@ package blockdevice
 
 import (
 	"context"
-	util2 "github.com/openebs/node-disk-manager/pkg/controllers/util"
+	util2 "github.com/aamir-tiwari-sumo/node-disk-manager/pkg/controllers/util"
 
 	"github.com/go-logr/logr"
 	corev1 "k8s.io/api/core/v1"
@@ -30,10 +30,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	apis "github.com/openebs/node-disk-manager/api/v1alpha1"
-	ndm "github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
-	"github.com/openebs/node-disk-manager/pkg/cleaner"
-	"github.com/openebs/node-disk-manager/pkg/util"
+	apis "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	ndm "github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/cleaner"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
 )
 
 // BlockDeviceReconciler reconciles a BlockDevice object

@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/db/kubernetes"
-	smartmetrics "github.com/openebs/node-disk-manager/pkg/metrics/smart"
-	"github.com/openebs/node-disk-manager/pkg/seachest"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/db/kubernetes"
+	smartmetrics "github.com/aamir-tiwari-sumo/node-disk-manager/pkg/metrics/smart"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/seachest"
 
 	"github.com/prometheus/client_golang/prometheus"
 	"k8s.io/klog/v2"

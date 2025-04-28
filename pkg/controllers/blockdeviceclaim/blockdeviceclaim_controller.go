@@ -21,7 +21,7 @@ import (
 	"context"
 	"fmt"
 
-	util2 "github.com/openebs/node-disk-manager/pkg/controllers/util"
+	util2 "github.com/aamir-tiwari-sumo/node-disk-manager/pkg/controllers/util"
 
 	"github.com/go-logr/logr"
 	corev1 "k8s.io/api/core/v1"
@@ -35,12 +35,12 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	apis "github.com/openebs/node-disk-manager/api/v1alpha1"
-	ndm "github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
-	"github.com/openebs/node-disk-manager/db/kubernetes"
-	"github.com/openebs/node-disk-manager/pkg/select/blockdevice"
-	"github.com/openebs/node-disk-manager/pkg/select/verify"
-	"github.com/openebs/node-disk-manager/pkg/util"
+	apis "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	ndm "github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/db/kubernetes"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/select/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/select/verify"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
 )
 
 // BlockDeviceClaimReconciler reconciles a BlockDeviceClaim object

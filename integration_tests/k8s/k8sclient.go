@@ -17,8 +17,8 @@ limitations under the License.
 package k8s
 
 import (
-	apis "github.com/openebs/node-disk-manager/api/v1alpha1"
-	"github.com/openebs/node-disk-manager/integration_tests/utils"
+	apis "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/utils"
 	apiextensionsclient "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
 	"k8s.io/client-go/rest"
 	"sigs.k8s.io/controller-runtime/pkg/manager"
@@ -79,7 +79,7 @@ func GetClientSet() (K8sClient, error) {
 	}
 
 	// controller-runtime client
-	mgr, err := manager.New(config, manager.Options{Namespace: Namespace, MetricsBindAddress: "0"})
+	mgr, err := manager.New(config, manager.Options{})
 	if err != nil {
 		return clientSet, err
 	}
@@ -99,7 +99,7 @@ func GetClientSet() (K8sClient, error) {
 
 func (k *K8sClient) RegenerateClient() error {
 	// controller-runtime client
-	mgr, err := manager.New(k.config, manager.Options{Namespace: Namespace, MetricsBindAddress: "0"})
+	mgr, err := manager.New(k.config, manager.Options{})
 	if err != nil {
 		return err
 	}

@@ -1,5 +1,4 @@
-//go:build (linux && ignore) || cgo
-// +build linux,ignore cgo
+
 
 /*
 Copyright 2020 The OpenEBS Authors

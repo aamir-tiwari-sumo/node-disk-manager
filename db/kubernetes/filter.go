@@ -18,7 +18,7 @@ package kubernetes
 
 import (
 	"errors"
-	"github.com/openebs/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/selection"
 	"sigs.k8s.io/controller-runtime/pkg/client"

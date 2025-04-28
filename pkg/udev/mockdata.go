@@ -31,9 +31,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	bd "github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/pkg/mount"
-	"github.com/openebs/node-disk-manager/pkg/sysfs"
+	bd "github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/mount"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/sysfs"
 )
 
 // MockOsDiskDetails struct contain different attribute of os disk.

@@ -20,8 +20,8 @@ import (
 	"errors"
 	"syscall"
 
-	libudevwrapper "github.com/openebs/node-disk-manager/pkg/udev"
-	"github.com/openebs/node-disk-manager/pkg/util"
+	libudevwrapper "github.com/aamir-tiwari-sumo/node-disk-manager/pkg/udev"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
 )
 
 type UdevEventType uint

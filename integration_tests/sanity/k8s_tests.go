@@ -19,7 +19,7 @@ package sanity
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/openebs/node-disk-manager/integration_tests/k8s"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/k8s"
 	"strings"
 )
 

@@ -23,7 +23,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/openebs/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
 )
 
 const (

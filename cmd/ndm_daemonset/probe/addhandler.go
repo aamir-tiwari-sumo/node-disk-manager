@@ -19,11 +19,11 @@ package probe
 import (
 	"fmt"
 
-	apis "github.com/openebs/node-disk-manager/api/v1alpha1"
-	"github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/db/kubernetes"
-	"github.com/openebs/node-disk-manager/pkg/features"
-	"github.com/openebs/node-disk-manager/pkg/partition"
+	apis "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/db/kubernetes"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/features"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/partition"
 
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/klog/v2"

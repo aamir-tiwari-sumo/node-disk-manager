@@ -16,7 +16,7 @@ limitations under the License.
 
 package smart
 
-import "github.com/openebs/node-disk-manager/pkg/udev"
+import "github.com/aamir-tiwari-sumo/node-disk-manager/pkg/udev"
 
 //MockOsDiskDetails struct contains the basic details of the disk
 type MockOsDiskDetails struct {

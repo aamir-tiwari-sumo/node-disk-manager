@@ -1,8 +1,8 @@
 # node-disk-manager
 
-[![Build Status](https://github.com/openebs/node-disk-manager/actions/workflows/build.yml/badge.svg)](https://github.com/openebs/node-disk-manager/actions/workflows/build.yml)
+[![Build Status](https://github.com/aamir-tiwari-sumo/node-disk-manager/actions/workflows/build.yml/badge.svg)](https://github.com/aamir-tiwari-sumo/node-disk-manager/actions/workflows/build.yml)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ea8d7835d7224178af058d98e5dac117)](https://www.codacy.com/app/OpenEBS/node-disk-manager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=openebs/node-disk-manager&amp;utm_campaign=Badge_Grade)
-[![Go Report](https://goreportcard.com/badge/github.com/openebs/node-disk-manager)](https://goreportcard.com/report/github.com/openebs/node-disk-manager)
+[![Go Report](https://goreportcard.com/badge/github.com/aamir-tiwari-sumo/node-disk-manager)](https://goreportcard.com/report/github.com/aamir-tiwari-sumo/node-disk-manager)
 [![codecov](https://codecov.io/gh/openebs/node-disk-manager/branch/develop/graph/badge.svg)](https://codecov.io/gh/openebs/node-disk-manager)
 [![Slack](https://img.shields.io/badge/chat!!!-slack-ff1493.svg?style=flat-square)](https://kubernetes.slack.com/messages/openebs)
 [![BCH compliance](https://bettercodehub.com/edge/badge/openebs/node-disk-manager?branch=develop)](https://bettercodehub.com/results/openebs/node-disk-manager)
@@ -32,7 +32,7 @@ The feedback of users / organizations currently using OpenEBS can be found [here
 Currently, the NDM project is in beta.
 
 # Usage
-A detailed usage documentation is maintained in the [wiki](https://github.com/openebs/node-disk-manager/wiki).
+A detailed usage documentation is maintained in the [wiki](https://github.com/aamir-tiwari-sumo/node-disk-manager/wiki).
 
 - [FAQ](https://docs.openebs.io/docs/next/ugndm.html) and [Troubleshooting](https://docs.openebs.io/docs/next/t-ndm.html)
 
@@ -56,7 +56,7 @@ Before building the image locally, you need to setup your development environmen
 ## Contributing
 
 OpenEBS welcomes your feedback and contributions in any form possible.
-- [Contributing Guide]( https://github.com/openebs/node-disk-manager/blob/master/CONTRIBUTING.md)
+- [Contributing Guide]( https://github.com/aamir-tiwari-sumo/node-disk-manager/blob/master/CONTRIBUTING.md)
 - [Project Roadmap](https://github.com/orgs/openebs/projects/2)
 
 

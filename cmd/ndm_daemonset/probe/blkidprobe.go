@@ -17,9 +17,9 @@ limitations under the License.
 package probe
 
 import (
-	"github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
-	"github.com/openebs/node-disk-manager/pkg/blkid"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/blkid"
 	"k8s.io/klog/v2"
 )
 
@@ -66,7 +66,7 @@ func (bp *blkidProbe) FillBlockDeviceDetails(bd *blockdevice.BlockDevice) {
 	// if the host is CentOS 7, the `libblkid` version on host is `2.23`,
 	// but the `PTUUID` tag was start to provide from `2.24`. This will cause
 	// the udev cache fetched from host udevd will not contain env `ID_PART_TABLE_UUID`.
-	// Fortunately, the `libblkid` version in our base container (ubuntu 16.04)
+	// Fortunately, the `libblkid` version in our base container (ubuntu 25.04)
 	// is `2.27.1`, will provide `PTUUID` tag, so we should fetch `PTUUID` from `blkid`.
 	if len(bd.PartitionInfo.PartitionTableUUID) == 0 {
 		bd.PartitionInfo.PartitionTableUUID = di.GetPartitionTableUUID()

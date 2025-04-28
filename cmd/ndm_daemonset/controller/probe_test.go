@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	bd "github.com/openebs/node-disk-manager/blockdevice"
+	bd "github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
 
 	"github.com/stretchr/testify/assert"
 )

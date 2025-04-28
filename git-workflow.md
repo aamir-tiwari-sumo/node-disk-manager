@@ -4,7 +4,7 @@
 
 ### Fork in the cloud
 
-1. Visit https://github.com/openebs/node-disk-manager
+1. Visit https://github.com/aamir-tiwari-sumo/node-disk-manager
 2. Click `Fork` button (top right) to establish a cloud-based fork.
 
 ### Clone fork to local host
@@ -19,7 +19,7 @@ git clone https://github.com/$user/node-disk-manager.git
 
 # Configure remote upstream
 cd node-disk-manager
-git remote add upstream https://github.com/openebs/node-disk-manager.git
+git remote add upstream https://github.com/aamir-tiwari-sumo/node-disk-manager.git
 
 # Never push to upstream develop
 git remote set-url --push upstream no_push
@@ -51,14 +51,14 @@ $ cd node-disk-manager
  $ git remote -v
  origin	https://github.com/$user/node-disk-manager.git (fetch)
  origin	https://github.com/$user/node-disk-manager.git (push)
- upstream	https://github.com/openebs/node-disk-manager.git (fetch)
- upstream	https://github.com/openebs/node-disk-manager.git (no_push)
+ upstream	https://github.com/aamir-tiwari-sumo/node-disk-manager.git (fetch)
+ upstream	https://github.com/aamir-tiwari-sumo/node-disk-manager.git (no_push)
  ```
 
  If the upstream is missing, add it by using below command.
 
  ```sh
- $ git remote add upstream https://github.com/openebs/node-disk-manager.git
+ $ git remote add upstream https://github.com/aamir-tiwari-sumo/node-disk-manager.git
  ```
  Fetch all the changes from the upstream develop branch.
 
@@ -141,5 +141,5 @@ Before you raise the Pull Requests, ensure you have reviewed the checklist in th
 - Ensure that commits are signed (DCO) .  
 - Ensure your commits history is clean with proper header and descriptions.
 
-Go to the [openebs/node-disk-manager github](https://github.com/openebs/node-disk-manager) and follow the Open Pull Request link to raise your PR from your development branch.
+Go to the [openebs/node-disk-manager github](https://github.com/aamir-tiwari-sumo/node-disk-manager) and follow the Open Pull Request link to raise your PR from your development branch.
 

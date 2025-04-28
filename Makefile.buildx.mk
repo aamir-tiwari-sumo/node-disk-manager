@@ -53,9 +53,9 @@ DOCKERX_IMAGE_EXPORTER:=${IMAGE_ORG}/node-disk-exporter:${TAG}
 docker.buildx:
 	export DOCKER_CLI_EXPERIMENTAL=enabled
 	@if ! docker buildx ls | grep -q container-builder; then\
-		docker buildx create --platform ${PLATFORMS} --name container-builder --use;\
+		docker buildx create --platform linux/amd64 --name container-builder --use;\
 	fi
-	@docker buildx build --platform ${PLATFORMS} \
+	@docker buildx build --platform linux/amd64 \
 		-t "$(DOCKERX_IMAGE_NAME)" ${DBUILD_ARGS} -f $(PWD)/build/$(COMPONENT)/Dockerfile \
 		. ${PUSH_ARG}
 	@echo "--> Build docker image: $(DOCKERX_IMAGE_NAME)"

@@ -19,8 +19,8 @@ package collector
 import (
 	"sync"
 
-	"github.com/openebs/node-disk-manager/db/kubernetes"
-	"github.com/openebs/node-disk-manager/pkg/metrics/static"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/db/kubernetes"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/metrics/static"
 
 	"github.com/prometheus/client_golang/prometheus"
 	"k8s.io/klog/v2"

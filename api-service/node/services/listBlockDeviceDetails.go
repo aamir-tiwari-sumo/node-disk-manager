@@ -16,8 +16,8 @@ package services
 import (
 	"context"
 
-	"github.com/openebs/node-disk-manager/pkg/smart"
-	protos "github.com/openebs/node-disk-manager/spec/ndm"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/smart"
+	protos "github.com/aamir-tiwari-sumo/node-disk-manager/spec/ndm"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

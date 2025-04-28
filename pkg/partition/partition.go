@@ -22,7 +22,7 @@ import (
 	"github.com/diskfs/go-diskfs"
 	"github.com/diskfs/go-diskfs/disk"
 	"github.com/diskfs/go-diskfs/partition/gpt"
-	"github.com/openebs/node-disk-manager/pkg/blkid"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/blkid"
 
 	"k8s.io/klog/v2"
 )

@@ -22,7 +22,7 @@ package cleaner
 
 import (
 	"context"
-	"github.com/openebs/node-disk-manager/api/v1alpha1"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
 	v1 "k8s.io/api/core/v1"

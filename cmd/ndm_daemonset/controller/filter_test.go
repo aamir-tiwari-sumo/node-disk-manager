@@ -17,7 +17,7 @@ limitations under the License.
 package controller
 
 import (
-	"github.com/openebs/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
 	"sync"
 	"testing"
 	"time"

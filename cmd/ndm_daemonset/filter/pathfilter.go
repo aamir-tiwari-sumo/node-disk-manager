@@ -17,13 +17,13 @@ limitations under the License.
 package filter
 
 import (
-	"github.com/openebs/node-disk-manager/blockdevice"
-	libudevwrapper "github.com/openebs/node-disk-manager/pkg/udev"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	libudevwrapper "github.com/aamir-tiwari-sumo/node-disk-manager/pkg/udev"
 
 	"strings"
 
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
-	"github.com/openebs/node-disk-manager/pkg/util"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
 )
 
 const (

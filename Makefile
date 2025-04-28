@@ -39,7 +39,7 @@ ARCH:=${XC_OS}_${XC_ARCH}
 export ARCH
 
 ifeq (${BASE_DOCKER_IMAGEARM64}, )
-  BASE_DOCKER_IMAGEARM64 = "arm64v8/ubuntu:18.04"
+  BASE_DOCKER_IMAGEARM64 = "arm64v8/ubuntu:25.04"
   export BASE_DOCKER_IMAGEARM64
 endif
 
@@ -47,8 +47,8 @@ ifeq (${BASEIMAGE}, )
 ifeq ($(ARCH),linux_arm64)
   BASEIMAGE:=${BASE_DOCKER_IMAGEARM64}
 else
-  # The ubuntu:16.04 image is being used as base image.
-  BASEIMAGE:=ubuntu:16.04
+  # The ubuntu:25.04 image is being used as base image.
+  BASEIMAGE:=ubuntu:25.04
 endif
 endif
 export BASEIMAGE
@@ -80,7 +80,7 @@ DBUILD_DATE=$(shell date -u +'%Y-%m-%dT%H:%M:%SZ')
 
 # Specify the docker arg for repository url
 ifeq (${DBUILD_REPO_URL}, )
-  DBUILD_REPO_URL="https://github.com/openebs/node-disk-manager"
+  DBUILD_REPO_URL="https://github.com/aamir-tiwari-sumo/node-disk-manager"
   export DBUILD_REPO_URL
 endif
 
@@ -123,7 +123,7 @@ build: clean build.common docker.ndm docker.ndo docker.exporter
 .PHONY: build.common
 build.common: license-check version
 
-# If there are any external tools need to be used, they can be added by defining a EXTERNAL_TOOLS variable 
+# If there are any external tools need to be used, they can be added by defining a EXTERNAL_TOOLS variable
 # Bootstrap the build by downloading additional tools
 .PHONY: bootstrap
 bootstrap:
@@ -213,7 +213,7 @@ build.ndm:
 .PHONY: docker.ndm
 docker.ndm: build.ndm Dockerfile.ndm
 	@echo "--> Building docker image for ndm-daemonset..."
-	@sudo docker build -t "$(DOCKER_IMAGE_NDM)" ${DBUILD_ARGS} -f Dockerfile.ndm .
+	@sudo docker build --no-cache -t "$(DOCKER_IMAGE_NDM)" ${DBUILD_ARGS} -f Dockerfile.ndm .
 	@echo "--> Build docker image: $(DOCKER_IMAGE_NDM)"
 	@echo
 
@@ -228,7 +228,7 @@ build.ndo:
 .PHONY: docker.ndo
 docker.ndo: build.ndo Dockerfile.ndo
 	@echo "--> Building docker image for ndm-operator..."
-	@sudo docker build -t "$(DOCKER_IMAGE_NDO)" ${DBUILD_ARGS} -f Dockerfile.ndo .
+	@sudo docker build --no-cache -t "$(DOCKER_IMAGE_NDO)" ${DBUILD_ARGS} -f Dockerfile.ndo .
 	@echo "--> Build docker image: $(DOCKER_IMAGE_NDO)"
 	@echo
 
@@ -243,7 +243,7 @@ build.exporter:
 .PHONY: docker.exporter
 docker.exporter: build.exporter Dockerfile.exporter
 	@echo "--> Building docker image for ndm-exporter..."
-	@sudo docker build -t "$(DOCKER_IMAGE_EXPORTER)" ${DBUILD_ARGS} -f Dockerfile.exporter .
+	@sudo docker build --no-cache -t "$(DOCKER_IMAGE_EXPORTER)" ${DBUILD_ARGS} -f Dockerfile.exporter .
 	@echo "--> Build docker image: $(DOCKER_IMAGE_EXPORTER)"
 	@echo
 

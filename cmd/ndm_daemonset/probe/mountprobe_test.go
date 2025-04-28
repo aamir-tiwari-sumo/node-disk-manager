@@ -23,8 +23,8 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/pkg/mount"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/mount"
 )
 
 const (

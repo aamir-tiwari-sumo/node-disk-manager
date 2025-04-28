@@ -19,8 +19,8 @@ package probe
 import (
 	"testing"
 
-	"github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/db/kubernetes"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/db/kubernetes"
 
 	"github.com/stretchr/testify/assert"
 )

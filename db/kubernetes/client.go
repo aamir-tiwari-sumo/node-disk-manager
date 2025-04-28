@@ -20,8 +20,8 @@ import (
 	"context"
 	"fmt"
 
-	apis "github.com/openebs/node-disk-manager/api/v1alpha1"
-	"github.com/openebs/node-disk-manager/blockdevice"
+	apis "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
 
 	"os"
 
@@ -117,7 +117,7 @@ func (cl *Client) SetClient(client2 client.Client) {
 // RegisterAPI registers the API scheme in the client using the manager.
 // This function needs to be called only once a client object
 func (cl *Client) RegisterAPI() error {
-	mgr, err := manager.New(cl.cfg, manager.Options{Namespace: cl.namespace})
+	mgr, err := manager.New(cl.cfg, manager.Options{})
 	if err != nil {
 		return err
 	}

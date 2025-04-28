@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/filter"
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/grpc"
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/probe"
-	"github.com/openebs/node-disk-manager/pkg/features"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/filter"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/grpc"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/probe"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/features"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"

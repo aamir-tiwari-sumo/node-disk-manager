@@ -17,19 +17,9 @@ limitations under the License.
 package main
 
 import (
-	"github.com/openebs/node-disk-manager/cmd/ndm-exporter/cmd"
-	"github.com/openebs/node-disk-manager/pkg/logs"
-	"k8s.io/klog/v2"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm-exporter/cmd"
 )
 
 func main() {
-	// initialize the global klog flags. This need to be done explicitly as init() method
-	// is no longer used to register the flags
-	klog.InitFlags(nil)
-
-	// init logger
-	logs.InitLogs()
-	defer logs.FlushLogs()
-
 	cmd.Execute()
 }

@@ -30,7 +30,7 @@ ENV GO111MODULE=on \
   PATH="/root/go/bin:${PATH}" \
   RELEASE_TAG=${RELEASE_TAG}
 
-WORKDIR /go/src/github.com/openebs/node-disk-manager/
+WORKDIR /go/src/github.com/aamir-tiwari-sumo/node-disk-manager/
 COPY . .
 
 RUN make NODEPINSTALL=true buildx.exporter
@@ -48,4 +48,4 @@ LABEL org.label-schema.build-date=$DBUILD_DATE
 LABEL org.label-schema.vcs-url=$DBUILD_REPO_URL
 LABEL org.label-schema.url=$DBUILD_SITE_URL
 
-COPY --from=build /go/src/github.com/openebs/node-disk-manager/bin/exporter /usr/local/bin/exporter
+COPY --from=build /go/src/github.com/aamir-tiwari-sumo/node-disk-manager/bin/exporter /usr/local/bin/exporter

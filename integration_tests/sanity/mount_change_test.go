@@ -23,8 +23,8 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/types"
 
-	"github.com/openebs/node-disk-manager/integration_tests/k8s"
-	"github.com/openebs/node-disk-manager/integration_tests/udev"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/k8s"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/udev"
 )
 
 var _ = Describe("Mount-point and fs type change detection tests", func() {

@@ -19,9 +19,9 @@ set -e
 # Get the git commit
 getGitCommit()
 {
-    if [ -f "$GOPATH"/src/github.com/openebs/node-disk-manager/GITCOMMIT ];
+    if [ -f "$GOPATH"/src/github.com/aamir-tiwari-sumo/node-disk-manager/GITCOMMIT ];
     then
-	GIT_COMMIT="$(cat "$GOPATH"/src/github.com/openebs/node-disk-manager/GITCOMMIT)"
+	GIT_COMMIT="$(cat "$GOPATH"/src/github.com/aamir-tiwari-sumo/node-disk-manager/GITCOMMIT)"
     else
 	GIT_COMMIT="$(git rev-parse HEAD)"
     fi
@@ -83,9 +83,9 @@ buildx(){
     output_name="bin/$CTLNAME"
     echo "Building for: ${GOOS} ${GOARCH}"
     go build \
-        -ldflags="-X github.com/openebs/node-disk-manager/pkg/version.GitCommit=${GIT_COMMIT} \
+        -ldflags="-X github.com/aamir-tiwari-sumo/node-disk-manager/pkg/version.GitCommit=${GIT_COMMIT} \
         -X main.CtlName='${CTLNAME}' \
-        -X github.com/openebs/node-disk-manager/pkg/version.Version=${VERSION}" \
+        -X github.com/aamir-tiwari-sumo/node-disk-manager/pkg/version.Version=${VERSION}" \
         -o "$output_name" ./cmd/"$BUILDPATH"
 
     echo "Buildx Successfully built: ${CTLNAME}"
@@ -105,9 +105,9 @@ build(){
             fi
             echo "Building for: ${GOOS} ${GOARCH}"
             go build \
-                -ldflags="-X github.com/openebs/node-disk-manager/pkg/version.GitCommit=${GIT_COMMIT} \
+                -ldflags="-X github.com/aamir-tiwari-sumo/node-disk-manager/pkg/version.GitCommit=${GIT_COMMIT} \
                 -X main.CtlName='${CTLNAME}' \
-                -X github.com/openebs/node-disk-manager/pkg/version.Version=${VERSION}" \
+                -X github.com/aamir-tiwari-sumo/node-disk-manager/pkg/version.Version=${VERSION}" \
                 -o "$output_name" ./cmd/"$BUILDPATH"
         done
     done

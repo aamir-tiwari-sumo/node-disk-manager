@@ -17,8 +17,8 @@ limitations under the License.
 package controller
 
 import (
-	bd "github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/pkg/udev"
+	bd "github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/udev"
 )
 
 // NewDeviceInfoFromBlockDevice converts the internal BlockDevice struct to

@@ -21,8 +21,8 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/types"
 
-	"github.com/openebs/node-disk-manager/integration_tests/k8s"
-	"github.com/openebs/node-disk-manager/integration_tests/udev"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/k8s"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/udev"
 )
 
 const newDiskCapacity int64 = 500 * 1024 * 1024

@@ -20,9 +20,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/openebs/node-disk-manager/blockdevice"
-	"github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
-	libudevwrapper "github.com/openebs/node-disk-manager/pkg/udev"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
+	libudevwrapper "github.com/aamir-tiwari-sumo/node-disk-manager/pkg/udev"
 
 	"github.com/stretchr/testify/assert"
 )

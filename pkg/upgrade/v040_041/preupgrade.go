@@ -19,8 +19,8 @@ package v040_041
 import (
 	"context"
 
-	apis "github.com/openebs/node-disk-manager/api/v1alpha1"
-	"github.com/openebs/node-disk-manager/pkg/util"
+	apis "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 

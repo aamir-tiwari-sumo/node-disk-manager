@@ -1,407 +1,407 @@
 v2.1.0 / 2023-02-09
 ========================
-* add support for nvme virtual path detection ([678](https://github.com/openebs/node-disk-manager/pull/678),[@dborman-hpe](https://github.com/dborman-hpe))
-* update go version to v1.19.3 ([681](https://github.com/openebs/node-disk-manager/pull/681),[@akhilerm](https://github.com/akhilerm))
-* update go module dependencies to use sigs.k8s.io/yaml instead of github.com/ghodss/yaml ([687](https://github.com/openebs/node-disk-manager/pull/687),[@Juneezee](https://github.com/Juneezee))
+* add support for nvme virtual path detection ([678](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/678),[@dborman-hpe](https://github.com/dborman-hpe))
+* update go version to v1.19.3 ([681](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/681),[@akhilerm](https://github.com/akhilerm))
+* update go module dependencies to use sigs.k8s.io/yaml instead of github.com/ghodss/yaml ([687](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/687),[@Juneezee](https://github.com/Juneezee))
 
 v1.8.0 / 2022-01-03
 ========================
-* add device attributes and location details as blockdevice labels ([618](https://github.com/openebs/node-disk-manager/pull/618),[@Ab-hishek](https://github.com/Ab-hishek))
-* add new feature to enable NDM to use partition table UUID for generating blockdevice UUID ([635](https://github.com/openebs/node-disk-manager/pull/635),[@cospotato](https://github.com/cospotato))
-* skip delete disk partition event when GPTBasedUUID is disable ([639](https://github.com/openebs/node-disk-manager/pull/639),[@liuminjian](https://github.com/liuminjian))
-* enhance the details stored on the blockdevice when the device has zpool ([643](https://github.com/openebs/node-disk-manager/pull/643),[@liuminjian](https://github.com/liuminjian))
-* changed exporter service to use a common label for both cluster and node exporter ([647](https://github.com/openebs/node-disk-manager/pull/647),[@Ab-hishek](https://github.com/Ab-hishek))
-* update get call to use empty object instead of deepcopy object while updating the resources ([648](https://github.com/openebs/node-disk-manager/pull/648),[@akhilerm](https://github.com/akhilerm))
-* mount /dev directory from host inside container so that wipefs gets reflected immediately on the host ([649](https://github.com/openebs/node-disk-manager/pull/649),[@akhilerm](https://github.com/akhilerm))
-* add support for feature gate dependencies, to enable features that are dependent on other features ([652](https://github.com/openebs/node-disk-manager/pull/652),[@jdkramhoft](https://github.com/jdkramhoft))
-* use a base image with builtin dependencies for building the project ([655](https://github.com/openebs/node-disk-manager/pull/655),[@z0marlin](https://github.com/z0marlin))
-* use libblkid from base container to fetch partition details on CentOS 7 hosts ([657](https://github.com/openebs/node-disk-manager/pull/657),[@akhilerm](https://github.com/akhilerm))
-* fix sysfs parsing by trimming newline suffix when reading from sysfs files([666](https://github.com/openebs/node-disk-manager/pull/666),[@akhilerm](https://github.com/akhilerm))
+* add device attributes and location details as blockdevice labels ([618](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/618),[@Ab-hishek](https://github.com/Ab-hishek))
+* add new feature to enable NDM to use partition table UUID for generating blockdevice UUID ([635](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/635),[@cospotato](https://github.com/cospotato))
+* skip delete disk partition event when GPTBasedUUID is disable ([639](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/639),[@liuminjian](https://github.com/liuminjian))
+* enhance the details stored on the blockdevice when the device has zpool ([643](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/643),[@liuminjian](https://github.com/liuminjian))
+* changed exporter service to use a common label for both cluster and node exporter ([647](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/647),[@Ab-hishek](https://github.com/Ab-hishek))
+* update get call to use empty object instead of deepcopy object while updating the resources ([648](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/648),[@akhilerm](https://github.com/akhilerm))
+* mount /dev directory from host inside container so that wipefs gets reflected immediately on the host ([649](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/649),[@akhilerm](https://github.com/akhilerm))
+* add support for feature gate dependencies, to enable features that are dependent on other features ([652](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/652),[@jdkramhoft](https://github.com/jdkramhoft))
+* use a base image with builtin dependencies for building the project ([655](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/655),[@z0marlin](https://github.com/z0marlin))
+* use libblkid from base container to fetch partition details on CentOS 7 hosts ([657](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/657),[@akhilerm](https://github.com/akhilerm))
+* fix sysfs parsing by trimming newline suffix when reading from sysfs files([666](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/666),[@akhilerm](https://github.com/akhilerm))
 
 
 v1.8.0-RC2 / 2021-12-28
 ========================
-* fix sysfs parsing by trimming newline suffix when reading from sysfs files([666](https://github.com/openebs/node-disk-manager/pull/666),[@akhilerm](https://github.com/akhilerm))
+* fix sysfs parsing by trimming newline suffix when reading from sysfs files([666](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/666),[@akhilerm](https://github.com/akhilerm))
 
 
 v1.8.0-RC1 / 2021-12-24
 ========================
-* add device attributes and location details as blockdevice labels ([618](https://github.com/openebs/node-disk-manager/pull/618),[@Ab-hishek](https://github.com/Ab-hishek))
-* add new feature to enable NDM to use partition table UUID for generating blockdevice UUID ([635](https://github.com/openebs/node-disk-manager/pull/635),[@cospotato](https://github.com/cospotato))
-* skip delete disk partition event when GPTBasedUUID is disable ([639](https://github.com/openebs/node-disk-manager/pull/639),[@liuminjian](https://github.com/liuminjian))
-* enhance the details stored on the blockdevice when the device has zpool ([643](https://github.com/openebs/node-disk-manager/pull/643),[@liuminjian](https://github.com/liuminjian))
-* changed exporter service to use a common label for both cluster and node exporter ([647](https://github.com/openebs/node-disk-manager/pull/647),[@Ab-hishek](https://github.com/Ab-hishek))
-* update get call to use empty object instead of deepcopy object while updating the resources ([648](https://github.com/openebs/node-disk-manager/pull/648),[@akhilerm](https://github.com/akhilerm))
-* mount /dev directory from host inside container so that wipefs gets reflected immediately on the host ([649](https://github.com/openebs/node-disk-manager/pull/649),[@akhilerm](https://github.com/akhilerm))
-* add support for feature gate dependencies, to enable features that are dependent on other features ([652](https://github.com/openebs/node-disk-manager/pull/652),[@jdkramhoft](https://github.com/jdkramhoft))
-* use a base image with builtin dependencies for building the project ([655](https://github.com/openebs/node-disk-manager/pull/655),[@z0marlin](https://github.com/z0marlin))
-* use libblkid from base container to fetch partition details on CentOS 7 hosts ([657](https://github.com/openebs/node-disk-manager/pull/657),[@akhilerm](https://github.com/akhilerm))
+* add device attributes and location details as blockdevice labels ([618](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/618),[@Ab-hishek](https://github.com/Ab-hishek))
+* add new feature to enable NDM to use partition table UUID for generating blockdevice UUID ([635](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/635),[@cospotato](https://github.com/cospotato))
+* skip delete disk partition event when GPTBasedUUID is disable ([639](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/639),[@liuminjian](https://github.com/liuminjian))
+* enhance the details stored on the blockdevice when the device has zpool ([643](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/643),[@liuminjian](https://github.com/liuminjian))
+* changed exporter service to use a common label for both cluster and node exporter ([647](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/647),[@Ab-hishek](https://github.com/Ab-hishek))
+* update get call to use empty object instead of deepcopy object while updating the resources ([648](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/648),[@akhilerm](https://github.com/akhilerm))
+* mount /dev directory from host inside container so that wipefs gets reflected immediately on the host ([649](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/649),[@akhilerm](https://github.com/akhilerm))
+* add support for feature gate dependencies, to enable features that are dependent on other features ([652](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/652),[@jdkramhoft](https://github.com/jdkramhoft))
+* use a base image with builtin dependencies for building the project ([655](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/655),[@z0marlin](https://github.com/z0marlin))
+* use libblkid from base container to fetch partition details on CentOS 7 hosts ([657](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/657),[@akhilerm](https://github.com/akhilerm))
 
 
 
 v1.7.0 / 2021-09-17
 ========================
-* add support to detect changes to block device size without restarting NDM ([#616](https://github.com/openebs/node-disk-manager/pull/616),[@z0marlin](https://github.com/z0marlin))
+* add support to detect changes to block device size without restarting NDM ([#616](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/616),[@z0marlin](https://github.com/z0marlin))
 
 
 
 v1.6.0 / 2021-07-14
 ========================
-* update k8s to 1.20.2 and controller runtime to 0.8.2 version ([#561](https://github.com/openebs/node-disk-manager/pull/561),[@RealHarshThakur](https://github.com/RealHarshThakur))
-* fix add-handler to update controller blockdevice cache after generating uuid ([#602](https://github.com/openebs/node-disk-manager/pull/602),[@z0marlin](https://github.com/z0marlin))
-* add support for detecting changes to mount points and filesystems without restarting ([#595](https://github.com/openebs/node-disk-manager/pull/595),[@z0marlin](https://github.com/z0marlin))
-* add probe allowlist in event message to selectively run probes when filling blockdevice details ([#601](https://github.com/openebs/node-disk-manager/pull/601),[@z0marlin](https://github.com/z0marlin))
+* update k8s to 1.20.2 and controller runtime to 0.8.2 version ([#561](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/561),[@RealHarshThakur](https://github.com/RealHarshThakur))
+* fix add-handler to update controller blockdevice cache after generating uuid ([#602](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/602),[@z0marlin](https://github.com/z0marlin))
+* add support for detecting changes to mount points and filesystems without restarting ([#595](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/595),[@z0marlin](https://github.com/z0marlin))
+* add probe allowlist in event message to selectively run probes when filling blockdevice details ([#601](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/601),[@z0marlin](https://github.com/z0marlin))
 
 
 
 v1.5.0 / 2021-06-16
 ========================
-* fix tests in probe and syspath packages ([#593](https://github.com/openebs/node-disk-manager/pull/593),[@z0marlin](https://github.com/z0marlin))
-* update mount utility to fetch all mount points for a given device ([#590](https://github.com/openebs/node-disk-manager/pull/590),[@z0marlin](https://github.com/z0marlin))
+* fix tests in probe and syspath packages ([#593](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/593),[@z0marlin](https://github.com/z0marlin))
+* update mount utility to fetch all mount points for a given device ([#590](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/590),[@z0marlin](https://github.com/z0marlin))
 
 
 
 v1.4.0 / 2021-04-14
 ========================
-* updated the apiextension version to v1 and moved the installation of crds from operator deployment to the operator yaml ([#559](https://github.com/openebs/node-disk-manager/pull/559),[@shubham14bajpai](https://github.com/shubham14bajpai))
-* add check for empty devpath while creating sysfs device ([#560](https://github.com/openebs/node-disk-manager/pull/560),[@akhilerm](https://github.com/akhilerm))
+* updated the apiextension version to v1 and moved the installation of crds from operator deployment to the operator yaml ([#559](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/559),[@shubham14bajpai](https://github.com/shubham14bajpai))
+* add check for empty devpath while creating sysfs device ([#560](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/560),[@akhilerm](https://github.com/akhilerm))
 
 
 v1.4.0-RC1 / 2021-04-06
 ========================
-* updated the apiextension version to v1 and moved the installation of crds from operator deployment to the operator yaml ([#559](https://github.com/openebs/node-disk-manager/pull/559),[@shubham14bajpai](https://github.com/shubham14bajpai))
-* add check for empty devpath while creating sysfs device ([#560](https://github.com/openebs/node-disk-manager/pull/560),[@akhilerm](https://github.com/akhilerm))
+* updated the apiextension version to v1 and moved the installation of crds from operator deployment to the operator yaml ([#559](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/559),[@shubham14bajpai](https://github.com/shubham14bajpai))
+* add check for empty devpath while creating sysfs device ([#560](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/560),[@akhilerm](https://github.com/akhilerm))
 
 
 
 v1.3.0 / 2021-03-12
 ========================
-* add support to push multiarch images to multiple registries ([#544](https://github.com/openebs/node-disk-manager/pull/544),[@akhilerm](https://github.com/akhilerm))
-* fixed cannot deactive BlockDevice immediately when "unplugged" device with GPTBasedUUID enabled ([#546](https://github.com/openebs/node-disk-manager/pull/546),[@cospotato](https://github.com/cospotato))
-* migrate integration tests from travis to github actions ([#548](https://github.com/openebs/node-disk-manager/pull/548),[@akhilerm](https://github.com/akhilerm))
+* add support to push multiarch images to multiple registries ([#544](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/544),[@akhilerm](https://github.com/akhilerm))
+* fixed cannot deactive BlockDevice immediately when "unplugged" device with GPTBasedUUID enabled ([#546](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/546),[@cospotato](https://github.com/cospotato))
+* migrate integration tests from travis to github actions ([#548](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/548),[@akhilerm](https://github.com/akhilerm))
 
 
 v1.3.0-RC1 / 2021-03-09
 ========================
-* add support to push multiarch images to multiple registries ([#544](https://github.com/openebs/node-disk-manager/pull/544),[@akhilerm](https://github.com/akhilerm))
-* fixed cannot deactive BlockDevice immediately when "unplugged" device with GPTBasedUUID enabled ([#546](https://github.com/openebs/node-disk-manager/pull/546),[@cospotato](https://github.com/cospotato))
-* migrate integration tests from travis to github actions ([#548](https://github.com/openebs/node-disk-manager/pull/548),[@akhilerm](https://github.com/akhilerm))
+* add support to push multiarch images to multiple registries ([#544](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/544),[@akhilerm](https://github.com/akhilerm))
+* fixed cannot deactive BlockDevice immediately when "unplugged" device with GPTBasedUUID enabled ([#546](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/546),[@cospotato](https://github.com/cospotato))
+* migrate integration tests from travis to github actions ([#548](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/548),[@akhilerm](https://github.com/akhilerm))
 
 
 
 v1.2.0 / 2021-02-13
 ========================
-* set values for default feature gates when flag is not provided and fix integration tests ([#536](https://github.com/openebs/node-disk-manager/pull/536),[@akhilerm](https://github.com/akhilerm))
-* fix sysfsprobe to fetch block/sector size and drive type for partitions ([#537](https://github.com/openebs/node-disk-manager/pull/537),[@z0marlin](https://github.com/z0marlin))
-* add support for multipath devices ([#530](https://github.com/openebs/node-disk-manager/pull/530),[@akhilerm](https://github.com/akhilerm))
-* pass mounts file path as a parameter when fetching mount attributes using DeviceBasicMountInfo() ([#539](https://github.com/openebs/node-disk-manager/pull/539),[@z0marlin](https://github.com/z0marlin))
-* add all devices to hierarchy cache irrespective of whether the blockdevice will be filtered or not. ([#538](https://github.com/openebs/node-disk-manager/pull/538),[@akhilerm](https://github.com/akhilerm))
-* fix typo for driveType in OpenAPI validation for blockdevice API ([#541](https://github.com/openebs/node-disk-manager/pull/541),[@akhilerm](https://github.com/akhilerm))
+* set values for default feature gates when flag is not provided and fix integration tests ([#536](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/536),[@akhilerm](https://github.com/akhilerm))
+* fix sysfsprobe to fetch block/sector size and drive type for partitions ([#537](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/537),[@z0marlin](https://github.com/z0marlin))
+* add support for multipath devices ([#530](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/530),[@akhilerm](https://github.com/akhilerm))
+* pass mounts file path as a parameter when fetching mount attributes using DeviceBasicMountInfo() ([#539](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/539),[@z0marlin](https://github.com/z0marlin))
+* add all devices to hierarchy cache irrespective of whether the blockdevice will be filtered or not. ([#538](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/538),[@akhilerm](https://github.com/akhilerm))
+* fix typo for driveType in OpenAPI validation for blockdevice API ([#541](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/541),[@akhilerm](https://github.com/akhilerm))
 
 
 v1.2.0-RC2 / 2021-02-11
 ========================
-* fix typo for driveType in OpenAPI validation for blockdevice API ([#541](https://github.com/openebs/node-disk-manager/pull/541),[@akhilerm](https://github.com/akhilerm))
+* fix typo for driveType in OpenAPI validation for blockdevice API ([#541](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/541),[@akhilerm](https://github.com/akhilerm))
 
 
 v1.2.0-RC1 / 2021-02-08
 ========================
-* set values for default feature gates when flag is not provided and fix integration tests ([#536](https://github.com/openebs/node-disk-manager/pull/536),[@akhilerm](https://github.com/akhilerm))
-* fix sysfsprobe to fetch block/sector size and drive type for partitions ([#537](https://github.com/openebs/node-disk-manager/pull/537),[@z0marlin](https://github.com/z0marlin))
-* add support for multipath devices ([#530](https://github.com/openebs/node-disk-manager/pull/530),[@akhilerm](https://github.com/akhilerm))
-* pass mounts file path as a parameter when fetching mount attributes using DeviceBasicMountInfo() ([#539](https://github.com/openebs/node-disk-manager/pull/539),[@z0marlin](https://github.com/z0marlin))
-* add all devices to hierarchy cache irrespective of whether the blockdevice will be filtered or not. ([#538](https://github.com/openebs/node-disk-manager/pull/538),[@akhilerm](https://github.com/akhilerm))
+* set values for default feature gates when flag is not provided and fix integration tests ([#536](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/536),[@akhilerm](https://github.com/akhilerm))
+* fix sysfsprobe to fetch block/sector size and drive type for partitions ([#537](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/537),[@z0marlin](https://github.com/z0marlin))
+* add support for multipath devices ([#530](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/530),[@akhilerm](https://github.com/akhilerm))
+* pass mounts file path as a parameter when fetching mount attributes using DeviceBasicMountInfo() ([#539](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/539),[@z0marlin](https://github.com/z0marlin))
+* add all devices to hierarchy cache irrespective of whether the blockdevice will be filtered or not. ([#538](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/538),[@akhilerm](https://github.com/akhilerm))
 
 
 
 v1.1.0 / 2021-01-13
 ========================
-* add `Unknown` drive type into blockdevice resource instead of using an empty string ([#523](https://github.com/openebs/node-disk-manager/pull/523),[@akhilerm](https://github.com/akhilerm))
-* add support for creating blockdevices for unused os-disk partitions ([#524](https://github.com/openebs/node-disk-manager/pull/524),[@akhilerm](https://github.com/akhilerm))
-* upgrade CRDs to v1 and add openAPI validation ([#493](https://github.com/openebs/node-disk-manager/pull/493),[@RealHarshThakur](https://github.com/RealHarshThakur))
-* add image pull secrets to cleanup job pod via environment variable ([#527](https://github.com/openebs/node-disk-manager/pull/527),[@akhilerm](https://github.com/akhilerm))
+* add `Unknown` drive type into blockdevice resource instead of using an empty string ([#523](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/523),[@akhilerm](https://github.com/akhilerm))
+* add support for creating blockdevices for unused os-disk partitions ([#524](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/524),[@akhilerm](https://github.com/akhilerm))
+* upgrade CRDs to v1 and add openAPI validation ([#493](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/493),[@RealHarshThakur](https://github.com/RealHarshThakur))
+* add image pull secrets to cleanup job pod via environment variable ([#527](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/527),[@akhilerm](https://github.com/akhilerm))
 
 
 v1.1.0-RC2 / 2021-01-11
 ========================
-* add image pull secrets to cleanup job pod via environment variable ([#527](https://github.com/openebs/node-disk-manager/pull/527),[@akhilerm](https://github.com/akhilerm))
+* add image pull secrets to cleanup job pod via environment variable ([#527](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/527),[@akhilerm](https://github.com/akhilerm))
 
 
 v1.1.0-RC1 / 2021-01-09
 ========================
-* add `Unknown` drive type into blockdevice resource instead of using an empty string ([#523](https://github.com/openebs/node-disk-manager/pull/523),[@akhilerm](https://github.com/akhilerm))
-* add support for creating blockdevices for unused os-disk partitions ([#524](https://github.com/openebs/node-disk-manager/pull/524),[@akhilerm](https://github.com/akhilerm))
-* upgrade CRDs to v1 and add openAPI validation ([#493](https://github.com/openebs/node-disk-manager/pull/493),[@RealHarshThakur](https://github.com/RealHarshThakur))
+* add `Unknown` drive type into blockdevice resource instead of using an empty string ([#523](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/523),[@akhilerm](https://github.com/akhilerm))
+* add support for creating blockdevices for unused os-disk partitions ([#524](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/524),[@akhilerm](https://github.com/akhilerm))
+* upgrade CRDs to v1 and add openAPI validation ([#493](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/493),[@RealHarshThakur](https://github.com/RealHarshThakur))
 
 
 
 v1.0.1 / 2020-12-13
 ========================
-* add check for device mapper path in path filter ([#518](https://github.com/openebs/node-disk-manager/pull/518),[@akhilerm](https://github.com/akhilerm))
-* fix a bug causing blockdevice resources not to be created for all the disks if one of the disk goes bad ([#517](https://github.com/openebs/node-disk-manager/pull/517),[@akhilerm](https://github.com/akhilerm))
-* fix a bug in parsing /proc/cmdline where the root partition identifier is not present ([#516](https://github.com/openebs/node-disk-manager/pull/516),[@akhilerm](https://github.com/akhilerm))
-* add checks for validity of partition and dm device resources created ([#519](https://github.com/openebs/node-disk-manager/pull/519),[@akhilerm](https://github.com/akhilerm))
+* add check for device mapper path in path filter ([#518](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/518),[@akhilerm](https://github.com/akhilerm))
+* fix a bug causing blockdevice resources not to be created for all the disks if one of the disk goes bad ([#517](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/517),[@akhilerm](https://github.com/akhilerm))
+* fix a bug in parsing /proc/cmdline where the root partition identifier is not present ([#516](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/516),[@akhilerm](https://github.com/akhilerm))
+* add checks for validity of partition and dm device resources created ([#519](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/519),[@akhilerm](https://github.com/akhilerm))
 
 
 v1.0.1-RC1 / 2020-12-10
 ========================
-* add check for device mapper path in path filter ([#518](https://github.com/openebs/node-disk-manager/pull/518),[@akhilerm](https://github.com/akhilerm))
-* fix a bug causing blockdevice resources not to be created for all the disks if one of the disk goes bad ([#517](https://github.com/openebs/node-disk-manager/pull/517),[@akhilerm](https://github.com/akhilerm))
-* fix a bug in parsing /proc/cmdline where the root partition identifier is not present ([#516](https://github.com/openebs/node-disk-manager/pull/516),[@akhilerm](https://github.com/akhilerm))
-* add checks for validity of partition and dm device resources created ([#519](https://github.com/openebs/node-disk-manager/pull/519),[@akhilerm](https://github.com/akhilerm))
+* add check for device mapper path in path filter ([#518](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/518),[@akhilerm](https://github.com/akhilerm))
+* fix a bug causing blockdevice resources not to be created for all the disks if one of the disk goes bad ([#517](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/517),[@akhilerm](https://github.com/akhilerm))
+* fix a bug in parsing /proc/cmdline where the root partition identifier is not present ([#516](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/516),[@akhilerm](https://github.com/akhilerm))
+* add checks for validity of partition and dm device resources created ([#519](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/519),[@akhilerm](https://github.com/akhilerm))
 
 
 
 v1.0.0 / 2020-11-14
 ========================
-* add controller options to device list command, fixed sysfs probe processing empty devices ([#504](https://github.com/openebs/node-disk-manager/pull/504),[@akhilerm](https://github.com/akhilerm))
-* chore(build) Updating dockerfile(s) with buildx built-in ARGs ([#503](https://github.com/openebs/node-disk-manager/pull/503),[@xunholy](https://github.com/xunholy))
-* add support for device-mapper(dm) devices. ([#495](https://github.com/openebs/node-disk-manager/pull/495),[@akhilerm](https://github.com/akhilerm))
-* restrict claiming of blockdevices with empty block-device-tag value ([#500](https://github.com/openebs/node-disk-manager/pull/500),[@ajeetrai707](https://github.com/ajeetrai707))
+* add controller options to device list command, fixed sysfs probe processing empty devices ([#504](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/504),[@akhilerm](https://github.com/akhilerm))
+* chore(build) Updating dockerfile(s) with buildx built-in ARGs ([#503](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/503),[@xunholy](https://github.com/xunholy))
+* add support for device-mapper(dm) devices. ([#495](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/495),[@akhilerm](https://github.com/akhilerm))
+* restrict claiming of blockdevices with empty block-device-tag value ([#500](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/500),[@ajeetrai707](https://github.com/ajeetrai707))
 
 
 v1.0.0-RC1 / 2020-11-11
 ========================
-* add controller options to device list command, fixed sysfs probe processing empty devices ([#504](https://github.com/openebs/node-disk-manager/pull/504),[@akhilerm](https://github.com/akhilerm))
-* chore(build) Updating dockerfile(s) with buildx built-in ARGs ([#503](https://github.com/openebs/node-disk-manager/pull/503),[@xunholy](https://github.com/xunholy))
-* add support for device-mapper(dm) devices. ([#495](https://github.com/openebs/node-disk-manager/pull/495),[@akhilerm](https://github.com/akhilerm))
-* restrict claiming of blockdevices with empty block-device-tag value ([#500](https://github.com/openebs/node-disk-manager/pull/500),[@ajeetrai707](https://github.com/ajeetrai707))
+* add controller options to device list command, fixed sysfs probe processing empty devices ([#504](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/504),[@akhilerm](https://github.com/akhilerm))
+* chore(build) Updating dockerfile(s) with buildx built-in ARGs ([#503](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/503),[@xunholy](https://github.com/xunholy))
+* add support for device-mapper(dm) devices. ([#495](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/495),[@akhilerm](https://github.com/akhilerm))
+* restrict claiming of blockdevices with empty block-device-tag value ([#500](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/500),[@ajeetrai707](https://github.com/ajeetrai707))
 
 
 
 v0.9.0 / 2020-10-14
 ========================
-* (fix) Support excluding multiple OS disk paths ([#481](https://github.com/openebs/node-disk-manager/pull/481),[@rahulchheda](https://github.com/rahulchheda))
-* fix a bug where partition table was written on disk with filesystem, resulting in data loss ([#496](https://github.com/openebs/node-disk-manager/pull/496),[@akhilerm](https://github.com/akhilerm))
-* add partition name into NDM created partitions ([#494](https://github.com/openebs/node-disk-manager/pull/494),[@avats-dev](https://github.com/avats-dev))
-* fix(mount): detect real device when using /dev/root ([#492](https://github.com/openebs/node-disk-manager/pull/492),[@zlymeda](https://github.com/zlymeda))
+* (fix) Support excluding multiple OS disk paths ([#481](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/481),[@rahulchheda](https://github.com/rahulchheda))
+* fix a bug where partition table was written on disk with filesystem, resulting in data loss ([#496](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/496),[@akhilerm](https://github.com/akhilerm))
+* add partition name into NDM created partitions ([#494](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/494),[@avats-dev](https://github.com/avats-dev))
+* fix(mount): detect real device when using /dev/root ([#492](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/492),[@zlymeda](https://github.com/zlymeda))
 
 
 v0.9.0-RC1 / 2020-10-08
 ========================
-* (fix) Support excluding multiple OS disk paths ([#481](https://github.com/openebs/node-disk-manager/pull/481),[@rahulchheda](https://github.com/rahulchheda))
-* fix a bug where partition table was written on disk with filesystem, resulting in data loss ([#496](https://github.com/openebs/node-disk-manager/pull/496),[@akhilerm](https://github.com/akhilerm))
-* add partition name into NDM created partitions ([#494](https://github.com/openebs/node-disk-manager/pull/494),[@avats-dev](https://github.com/avats-dev))
-* fix(mount): detect real device when using /dev/root ([#492](https://github.com/openebs/node-disk-manager/pull/492),[@zlymeda](https://github.com/zlymeda))
+* (fix) Support excluding multiple OS disk paths ([#481](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/481),[@rahulchheda](https://github.com/rahulchheda))
+* fix a bug where partition table was written on disk with filesystem, resulting in data loss ([#496](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/496),[@akhilerm](https://github.com/akhilerm))
+* add partition name into NDM created partitions ([#494](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/494),[@avats-dev](https://github.com/avats-dev))
+* fix(mount): detect real device when using /dev/root ([#492](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/492),[@zlymeda](https://github.com/zlymeda))
 
 
 
 v0.8.1 / 2020-09-15
 ========================
-* add support to add custom tag to blockdevices based on config ([#475](https://github.com/openebs/node-disk-manager/pull/475),[@akhilerm](https://github.com/akhilerm))
-* fix a bug where NDM operator crashes if a claimed BD is manually deleted ([#479](https://github.com/openebs/node-disk-manager/pull/479),[@akhilerm](https://github.com/akhilerm))
-* update go version to 1.14.7 ([#476](https://github.com/openebs/node-disk-manager/pull/476),[@akhilerm](https://github.com/akhilerm))
-* add additional check to exclude blockdevices with tag while manual claiming ([#404](https://github.com/openebs/node-disk-manager/pull/404),[@akhilerm](https://github.com/akhilerm))
+* add support to add custom tag to blockdevices based on config ([#475](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/475),[@akhilerm](https://github.com/akhilerm))
+* fix a bug where NDM operator crashes if a claimed BD is manually deleted ([#479](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/479),[@akhilerm](https://github.com/akhilerm))
+* update go version to 1.14.7 ([#476](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/476),[@akhilerm](https://github.com/akhilerm))
+* add additional check to exclude blockdevices with tag while manual claiming ([#404](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/404),[@akhilerm](https://github.com/akhilerm))
 
 
 v0.8.1-RC1 / 2020-09-10
 ========================
-* add support to add custom tag to blockdevices based on config ([#475](https://github.com/openebs/node-disk-manager/pull/475),[@akhilerm](https://github.com/akhilerm))
-* fix a bug where NDM operator crashes if a claimed BD is manually deleted ([#479](https://github.com/openebs/node-disk-manager/pull/479),[@akhilerm](https://github.com/akhilerm))
-* update go version to 1.14.7 ([#476](https://github.com/openebs/node-disk-manager/pull/476),[@akhilerm](https://github.com/akhilerm))
-* add additional check to exclude blockdevices with tag while manual claiming ([#404](https://github.com/openebs/node-disk-manager/pull/404),[@akhilerm](https://github.com/akhilerm))
+* add support to add custom tag to blockdevices based on config ([#475](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/475),[@akhilerm](https://github.com/akhilerm))
+* fix a bug where NDM operator crashes if a claimed BD is manually deleted ([#479](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/479),[@akhilerm](https://github.com/akhilerm))
+* update go version to 1.14.7 ([#476](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/476),[@akhilerm](https://github.com/akhilerm))
+* add additional check to exclude blockdevices with tag while manual claiming ([#404](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/404),[@akhilerm](https://github.com/akhilerm))
 
 
 
 v0.8.0 / 2020-08-14
 ========================
-* Upgrade go version to 1.14 ([#459](https://github.com/openebs/node-disk-manager/pull/459),[@harshthakur9030](https://github.com/harshthakur9030))
-* Remove dependency on gox and instead use native go build. ([#456](https://github.com/openebs/node-disk-manager/pull/456),[@harshthakur9030](https://github.com/harshthakur9030))
-* Make udev scan operation thread safe. ([#455](https://github.com/openebs/node-disk-manager/pull/455),[@harshthakur9030](https://github.com/harshthakur9030))
-* remove v prefix from all image tags ([#467](https://github.com/openebs/node-disk-manager/pull/467),[@akhilerm](https://github.com/akhilerm))
-* automate migration of blockdevices from legacy UUID to GPT Based UUID ([#442](https://github.com/openebs/node-disk-manager/pull/442),[@akhilerm](https://github.com/akhilerm))
-* API Service to provide additional functionality ([#433](https://github.com/openebs/node-disk-manager/pull/433),[@harshthakur9030](https://github.com/harshthakur9030))
-* fix running cleanup job for sparse blockdevices. ([#463](https://github.com/openebs/node-disk-manager/pull/463),[@akhilerm](https://github.com/akhilerm))
-* update the project dependencies (k8s: 1.17.4, controller-runtime: 0.5.2, operator-sdk: 0.17.0) ([#365](https://github.com/openebs/node-disk-manager/pull/365),[@akhilerm](https://github.com/akhilerm))
-* disable metrics server of controller runtime by default. ([#473](https://github.com/openebs/node-disk-manager/pull/473),[@akhilerm](https://github.com/akhilerm))
+* Upgrade go version to 1.14 ([#459](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/459),[@harshthakur9030](https://github.com/harshthakur9030))
+* Remove dependency on gox and instead use native go build. ([#456](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/456),[@harshthakur9030](https://github.com/harshthakur9030))
+* Make udev scan operation thread safe. ([#455](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/455),[@harshthakur9030](https://github.com/harshthakur9030))
+* remove v prefix from all image tags ([#467](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/467),[@akhilerm](https://github.com/akhilerm))
+* automate migration of blockdevices from legacy UUID to GPT Based UUID ([#442](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/442),[@akhilerm](https://github.com/akhilerm))
+* API Service to provide additional functionality ([#433](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/433),[@harshthakur9030](https://github.com/harshthakur9030))
+* fix running cleanup job for sparse blockdevices. ([#463](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/463),[@akhilerm](https://github.com/akhilerm))
+* update the project dependencies (k8s: 1.17.4, controller-runtime: 0.5.2, operator-sdk: 0.17.0) ([#365](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/365),[@akhilerm](https://github.com/akhilerm))
+* disable metrics server of controller runtime by default. ([#473](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/473),[@akhilerm](https://github.com/akhilerm))
 
 
 v0.8.0-RC2 / 2020-08-12
 ========================
-* disable metrics server of controller runtime by default. ([#473](https://github.com/openebs/node-disk-manager/pull/473),[@akhilerm](https://github.com/akhilerm))
+* disable metrics server of controller runtime by default. ([#473](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/473),[@akhilerm](https://github.com/akhilerm))
 
 
 v0.8.0-RC1 / 2020-08-10
 ========================
-* Upgrade go version to 1.14 ([#459](https://github.com/openebs/node-disk-manager/pull/459),[@harshthakur9030](https://github.com/harshthakur9030))
-* Remove dependency on gox and instead use native go build. ([#456](https://github.com/openebs/node-disk-manager/pull/456),[@harshthakur9030](https://github.com/harshthakur9030))
-* Make udev scan operation thread safe. ([#455](https://github.com/openebs/node-disk-manager/pull/455),[@harshthakur9030](https://github.com/harshthakur9030))
-* remove v prefix from all image tags ([#467](https://github.com/openebs/node-disk-manager/pull/467),[@akhilerm](https://github.com/akhilerm))
-* automate migration of blockdevices from legacy UUID to GPT Based UUID ([#442](https://github.com/openebs/node-disk-manager/pull/442),[@akhilerm](https://github.com/akhilerm))
-* API Service to provide additional functionality ([#433](https://github.com/openebs/node-disk-manager/pull/433),[@harshthakur9030](https://github.com/harshthakur9030))
-* fix running cleanup job for sparse blockdevices. ([#463](https://github.com/openebs/node-disk-manager/pull/463),[@akhilerm](https://github.com/akhilerm))
-* update the project dependencies (k8s: 1.17.4, controller-runtime: 0.5.2, operator-sdk: 0.17.0) ([#365](https://github.com/openebs/node-disk-manager/pull/365),[@akhilerm](https://github.com/akhilerm))
+* Upgrade go version to 1.14 ([#459](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/459),[@harshthakur9030](https://github.com/harshthakur9030))
+* Remove dependency on gox and instead use native go build. ([#456](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/456),[@harshthakur9030](https://github.com/harshthakur9030))
+* Make udev scan operation thread safe. ([#455](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/455),[@harshthakur9030](https://github.com/harshthakur9030))
+* remove v prefix from all image tags ([#467](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/467),[@akhilerm](https://github.com/akhilerm))
+* automate migration of blockdevices from legacy UUID to GPT Based UUID ([#442](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/442),[@akhilerm](https://github.com/akhilerm))
+* API Service to provide additional functionality ([#433](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/433),[@harshthakur9030](https://github.com/harshthakur9030))
+* fix running cleanup job for sparse blockdevices. ([#463](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/463),[@akhilerm](https://github.com/akhilerm))
+* update the project dependencies (k8s: 1.17.4, controller-runtime: 0.5.2, operator-sdk: 0.17.0) ([#365](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/365),[@akhilerm](https://github.com/akhilerm))
 
 
 
 v0.7.0 / 2020-07-14
 ========================
-* fix wiping released blockdevices with partitions ([#445](https://github.com/openebs/node-disk-manager/pull/445), [@akhilerm](https://github.com/akhilerm))
-* fix bug of having an open file descriptor in NDM causing applications to receive resource busy error. ([#450](https://github.com/openebs/node-disk-manager/pull/450), [@akhilerm](https://github.com/akhilerm))
-* Adding support to build multi-arch docker images. ([#428](https://github.com/openebs/node-disk-manager/pull/428), [@xunholy](https://github.com/xunholy))
-* deprecate invalid capacity request phase from block device claim ([#443](https://github.com/openebs/node-disk-manager/pull/443), [@akhilerm](https://github.com/akhilerm))
+* fix wiping released blockdevices with partitions ([#445](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/445), [@akhilerm](https://github.com/akhilerm))
+* fix bug of having an open file descriptor in NDM causing applications to receive resource busy error. ([#450](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/450), [@akhilerm](https://github.com/akhilerm))
+* Adding support to build multi-arch docker images. ([#428](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/428), [@xunholy](https://github.com/xunholy))
+* deprecate invalid capacity request phase from block device claim ([#443](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/443), [@akhilerm](https://github.com/akhilerm))
 
 
 v0.7.0-RC1 / 2020-07-09
 ========================
-* fix wiping released blockdevices with partitions ([#445](https://github.com/openebs/node-disk-manager/pull/445), [@akhilerm](https://github.com/akhilerm))
-* fix bug of having an open file descriptor in NDM causing applications to receive resource busy error. ([#450](https://github.com/openebs/node-disk-manager/pull/450), [@akhilerm](https://github.com/akhilerm))
-* Adding support to build multi-arch docker images. ([#428](https://github.com/openebs/node-disk-manager/pull/428), [@xunholy](https://github.com/xunholy))
-* deprecate invalid capacity request phase from block device claim ([#443](https://github.com/openebs/node-disk-manager/pull/443), [@akhilerm](https://github.com/akhilerm))
+* fix wiping released blockdevices with partitions ([#445](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/445), [@akhilerm](https://github.com/akhilerm))
+* fix bug of having an open file descriptor in NDM causing applications to receive resource busy error. ([#450](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/450), [@akhilerm](https://github.com/akhilerm))
+* Adding support to build multi-arch docker images. ([#428](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/428), [@xunholy](https://github.com/xunholy))
+* deprecate invalid capacity request phase from block device claim ([#443](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/443), [@akhilerm](https://github.com/akhilerm))
 
 
 v0.6.0 / 2020-06-13
 ========================
-* make feature gates independent of daemon controller ([#426](https://github.com/openebs/node-disk-manager/pull/426), [@akhilerm](https://github.com/akhilerm))
-* remove all disk resources and disk CRD as part of installation ([#427](https://github.com/openebs/node-disk-manager/pull/427), [@akhilerm](https://github.com/akhilerm))
-* add new discovery probe (called used-by-probe) to detect if devices are used by K8s Local PV, ZFS-LocalPV, Mayastor and cStor ([#430](https://github.com/openebs/node-disk-manager/pull/430), [@akhilerm](https://github.com/akhilerm))
-* migrate project to use go modules ([#434](https://github.com/openebs/node-disk-manager/pull/434), [@harshthakur9030](https://github.com/harshthakur9030))
-* Adding filesystem info column in output of kubectl get bd -o wide ([#435](https://github.com/openebs/node-disk-manager/pull/435), [@harshthakur9030](https://github.com/harshthakur9030))
+* make feature gates independent of daemon controller ([#426](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/426), [@akhilerm](https://github.com/akhilerm))
+* remove all disk resources and disk CRD as part of installation ([#427](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/427), [@akhilerm](https://github.com/akhilerm))
+* add new discovery probe (called used-by-probe) to detect if devices are used by K8s Local PV, ZFS-LocalPV, Mayastor and cStor ([#430](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/430), [@akhilerm](https://github.com/akhilerm))
+* migrate project to use go modules ([#434](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/434), [@harshthakur9030](https://github.com/harshthakur9030))
+* Adding filesystem info column in output of kubectl get bd -o wide ([#435](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/435), [@harshthakur9030](https://github.com/harshthakur9030))
 
 
 v0.6.0-RC2 / 2020-06-12
 ========================
-* Adding filesystem info column in output of kubectl get bd -o wide ([#435](https://github.com/openebs/node-disk-manager/pull/435), [@harshthakur9030](https://github.com/harshthakur9030))
+* Adding filesystem info column in output of kubectl get bd -o wide ([#435](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/435), [@harshthakur9030](https://github.com/harshthakur9030))
 
 
 v0.6.0-RC1 / 2020-06-09
 ========================
-* make feature gates independent of daemon controller ([#426](https://github.com/openebs/node-disk-manager/pull/426), [@akhilerm](https://github.com/akhilerm))
-* remove all disk resources and disk CRD as part of installation ([#427](https://github.com/openebs/node-disk-manager/pull/427), [@akhilerm](https://github.com/akhilerm))
-* add new discovery probe (called used-by-probe) to detect if devices are used by K8s Local PV, ZFS-LocalPV, Mayastor and cStor ([#430](https://github.com/openebs/node-disk-manager/pull/430), [@akhilerm](https://github.com/akhilerm))
-* migrate project to use go modules ([#434](https://github.com/openebs/node-disk-manager/pull/434), [@harshthakur9030](https://github.com/harshthakur9030))
+* make feature gates independent of daemon controller ([#426](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/426), [@akhilerm](https://github.com/akhilerm))
+* remove all disk resources and disk CRD as part of installation ([#427](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/427), [@akhilerm](https://github.com/akhilerm))
+* add new discovery probe (called used-by-probe) to detect if devices are used by K8s Local PV, ZFS-LocalPV, Mayastor and cStor ([#430](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/430), [@akhilerm](https://github.com/akhilerm))
+* migrate project to use go modules ([#434](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/434), [@harshthakur9030](https://github.com/harshthakur9030))
 
 
 v0.5.0 / 2020-05-15
 ========================
 
-  * add support for blockdevice metrics using seachest ([#349](https://github.com/openebs/node-disk-manager/pull/349), [@akhilerm](https://github.com/akhilerm))
-  * add ppc64le builds ([#374](https://github.com/openebs/node-disk-manager/pull/374), [@Pensu](https://github.com/Pensu))
-  * add support for partitions and enable the new UUID algorithm for blockdevice UUID generation ([#386](https://github.com/openebs/node-disk-manager/pull/386), [@akhilerm](https://github.com/akhilerm))
-  * add OpenEBS to the list of default excluded vendors ([#409](https://github.com/openebs/node-disk-manager/pull/409), [@akhilerm](https://github.com/akhilerm))
-  * add new filter to validate BlockDevices and remove invalid entries ([#410](https://github.com/openebs/node-disk-manager/pull/410), [@akhilerm](https://github.com/akhilerm))
-  * remove controller for cluster scoped disk resource ([#412](https://github.com/openebs/node-disk-manager/pull/412), [@akhilerm](https://github.com/akhilerm))
-  * add finalizer on claimed BlockDevice resource to prevent accidental deletion ([#416](https://github.com/openebs/node-disk-manager/pull/416), [@akhilerm](https://github.com/akhilerm))
-  * add env to enable/disable CRD installation ([#421](https://github.com/openebs/node-disk-manager/pull/421), [@akhilerm](https://github.com/akhilerm))
+  * add support for blockdevice metrics using seachest ([#349](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/349), [@akhilerm](https://github.com/akhilerm))
+  * add ppc64le builds ([#374](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/374), [@Pensu](https://github.com/Pensu))
+  * add support for partitions and enable the new UUID algorithm for blockdevice UUID generation ([#386](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/386), [@akhilerm](https://github.com/akhilerm))
+  * add OpenEBS to the list of default excluded vendors ([#409](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/409), [@akhilerm](https://github.com/akhilerm))
+  * add new filter to validate BlockDevices and remove invalid entries ([#410](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/410), [@akhilerm](https://github.com/akhilerm))
+  * remove controller for cluster scoped disk resource ([#412](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/412), [@akhilerm](https://github.com/akhilerm))
+  * add finalizer on claimed BlockDevice resource to prevent accidental deletion ([#416](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/416), [@akhilerm](https://github.com/akhilerm))
+  * add env to enable/disable CRD installation ([#421](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/421), [@akhilerm](https://github.com/akhilerm))
 
 v0.5.0-RC2 / 2020-05-13
 ========================
 
-  * add env to enable/disable CRD installation ([#421](https://github.com/openebs/node-disk-manager/pull/421), [@akhilerm](https://github.com/akhilerm))
+  * add env to enable/disable CRD installation ([#421](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/421), [@akhilerm](https://github.com/akhilerm))
   
 v0.5.0-RC1 / 2020-05-08
 ========================
 
-  * add support for blockdevice metrics using seachest ([#349](https://github.com/openebs/node-disk-manager/pull/349), [@akhilerm](https://github.com/akhilerm))
-  * add ppc64le builds ([#374](https://github.com/openebs/node-disk-manager/pull/374), [@Pensu](https://github.com/Pensu))
-  * add support for partitions and enable the new UUID algorithm for blockdevice UUID generation ([#386](https://github.com/openebs/node-disk-manager/pull/386), [@akhilerm](https://github.com/akhilerm))
-  * add OpenEBS to the list of default excluded vendors ([#409](https://github.com/openebs/node-disk-manager/pull/409), [@akhilerm](https://github.com/akhilerm))
-  * add new filter to validate BlockDevices and remove invalid entries ([#410](https://github.com/openebs/node-disk-manager/pull/410), [@akhilerm](https://github.com/akhilerm))
-  * remove controller for cluster scoped disk resource ([#412](https://github.com/openebs/node-disk-manager/pull/412), [@akhilerm](https://github.com/akhilerm))
-  * add finalizer on claimed BlockDevice resource to prevent accidental deletion ([#416](https://github.com/openebs/node-disk-manager/pull/416), [@akhilerm](https://github.com/akhilerm))
+  * add support for blockdevice metrics using seachest ([#349](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/349), [@akhilerm](https://github.com/akhilerm))
+  * add ppc64le builds ([#374](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/374), [@Pensu](https://github.com/Pensu))
+  * add support for partitions and enable the new UUID algorithm for blockdevice UUID generation ([#386](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/386), [@akhilerm](https://github.com/akhilerm))
+  * add OpenEBS to the list of default excluded vendors ([#409](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/409), [@akhilerm](https://github.com/akhilerm))
+  * add new filter to validate BlockDevices and remove invalid entries ([#410](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/410), [@akhilerm](https://github.com/akhilerm))
+  * remove controller for cluster scoped disk resource ([#412](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/412), [@akhilerm](https://github.com/akhilerm))
+  * add finalizer on claimed BlockDevice resource to prevent accidental deletion ([#416](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/416), [@akhilerm](https://github.com/akhilerm))
 
 v0.4.9 / 2020-04-15
 ========================
 
   * add physical/logical block size, hardware sector size and drive type into BlockDevice resource
-  ([#388](https://github.com/openebs/node-disk-manager/pull/388), [@akhilerm](https://github.com/akhilerm))
-  * add new sysfs probe to fetch block device details from sysfs ([#375](https://github.com/openebs/node-disk-manager/pull/375), 
+  ([#388](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/388), [@akhilerm](https://github.com/akhilerm))
+  * add new sysfs probe to fetch block device details from sysfs ([#375](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/375), 
   [shovanmaity](https://github.com/shovanmaity))
-  * enable persisting of labels and annotations on BlockDevice resource ([#394](https://github.com/openebs/node-disk-manager/pull/394), 
+  * enable persisting of labels and annotations on BlockDevice resource ([#394](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/394), 
   [shovanmaity](https://github.com/shovanmaity))
-  * add label selector to BlockDeviceClaim resource ([#397](https://github.com/openebs/node-disk-manager/pull/397), 
+  * add label selector to BlockDeviceClaim resource ([#397](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/397), 
   [@akhilerm](https://github.com/akhilerm))
-  * add support for `openebs.io/block-device-tag` label on BlockDevice ([#400](https://github.com/openebs/node-disk-manager/pull/400), 
+  * add support for `openebs.io/block-device-tag` label on BlockDevice ([#400](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/400), 
   [@akhilerm](https://github.com/akhilerm))
 
 v0.4.9-RC1 / 2020-04-07
 ========================
 
   * add physical/logical block size, hardware sector size and drive type into BlockDevice resource
-  ([#388](https://github.com/openebs/node-disk-manager/pull/388), [@akhilerm](https://github.com/akhilerm))
-  * add new sysfs probe to fetch block device details from sysfs ([#375](https://github.com/openebs/node-disk-manager/pull/375), 
+  ([#388](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/388), [@akhilerm](https://github.com/akhilerm))
+  * add new sysfs probe to fetch block device details from sysfs ([#375](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/375), 
   [shovanmaity](https://github.com/shovanmaity))
-  * enable persisting of labels and annotations on BlockDevice resource ([#394](https://github.com/openebs/node-disk-manager/pull/394), 
+  * enable persisting of labels and annotations on BlockDevice resource ([#394](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/394), 
   [shovanmaity](https://github.com/shovanmaity))
-  * add label selector to BlockDeviceClaim resource ([#397](https://github.com/openebs/node-disk-manager/pull/397), 
+  * add label selector to BlockDeviceClaim resource ([#397](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/397), 
   [@akhilerm](https://github.com/akhilerm))
-  * add support for `openebs.io/block-device-tag` label on BlockDevice ([#400](https://github.com/openebs/node-disk-manager/pull/400), 
+  * add support for `openebs.io/block-device-tag` label on BlockDevice ([#400](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/400), 
   [@akhilerm](https://github.com/akhilerm))
 
 v0.4.8 / 2020-03-15
 ========================
 
-  * enabled automatic builds of arm64 images ([#371](https://github.com/openebs/node-disk-manager/pull/371),
+  * enabled automatic builds of arm64 images ([#371](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/371),
   [@akhilerm](https://github.com/akhilerm))
 
 v0.4.8-RC1 / 2020-03-06
 ========================
 
-  * enabled automatic builds of arm64 images ([#371](https://github.com/openebs/node-disk-manager/pull/371),
+  * enabled automatic builds of arm64 images ([#371](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/371),
   [@akhilerm](https://github.com/akhilerm))
 
 v0.4.7 / 2020-02-14
 ========================
 
-  * added support to display blockdevice PATH in kubectl output ([#367](https://github.com/openebs/node-disk-manager/pull/367), 
+  * added support to display blockdevice PATH in kubectl output ([#367](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/367), 
   [@chandankumar4](https://github.com/chandankumar4))
-  * customize location for NDM core files ([#362](https://github.com/openebs/node-disk-manager/pull/362), 
+  * customize location for NDM core files ([#362](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/362), 
   [@akhilerm](https://github.com/akhilerm))
   
 v0.4.7-RC1 / 2020-02-07
 ========================
 
-  * added support to display blockdevice PATH in kubectl output ([#367](https://github.com/openebs/node-disk-manager/pull/367), 
+  * added support to display blockdevice PATH in kubectl output ([#367](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/367), 
   [@chandankumar4](https://github.com/chandankumar4))
-  * customize location for NDM core files ([#362](https://github.com/openebs/node-disk-manager/pull/362), 
+  * customize location for NDM core files ([#362](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/362), 
   [@akhilerm](https://github.com/akhilerm))
   
 v0.4.6 / 2020-01-14
 ========================
 
-  * added toleration to cleanup jobs ([#363](https://github.com/openebs/node-disk-manager/pull/363), 
+  * added toleration to cleanup jobs ([#363](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/363), 
   [@rahulchheda](https://github.com/rahulchheda))
-  * disabled coredump in NDM Daemon by default ([#359](https://github.com/openebs/node-disk-manager/pull/359), 
+  * disabled coredump in NDM Daemon by default ([#359](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/359), 
   [@akhilerm](https://github.com/akhilerm))
-  * disabled writing system wide core pattern ([#358](https://github.com/openebs/node-disk-manager/pull/358), 
+  * disabled writing system wide core pattern ([#358](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/358), 
   [@akhilerm](https://github.com/akhilerm)) 
   
 v0.4.6-RC2 / 2020-01-11
 ========================
 
-  * added toleration to cleanup jobs ([#363](https://github.com/openebs/node-disk-manager/pull/363), 
+  * added toleration to cleanup jobs ([#363](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/363), 
   [@rahulchheda](https://github.com/rahulchheda))
 
 v0.4.6-RC1 / 2020-01-06
 ========================
 
-  * disabled coredump in NDM Daemon by default ([#359](https://github.com/openebs/node-disk-manager/pull/359), 
+  * disabled coredump in NDM Daemon by default ([#359](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/359), 
   [@akhilerm](https://github.com/akhilerm))
-  * disabled writing system wide core pattern ([#358](https://github.com/openebs/node-disk-manager/pull/358), 
+  * disabled writing system wide core pattern ([#358](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/358), 
   [@akhilerm](https://github.com/akhilerm)) 
 
 v0.4.5 / 2019-12-13
 ========================
 
-  * fixed security vulnerability in images used in cleanup pods ([#351](https://github.com/openebs/node-disk-manager/pull/351), 
+  * fixed security vulnerability in images used in cleanup pods ([#351](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/351), 
   [@kmova](https://github.com/kmova))
-  * added disk hierarchy information to the daemon logs ([#353](https://github.com/openebs/node-disk-manager/pull/353), 
+  * added disk hierarchy information to the daemon logs ([#353](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/353), 
   [@akhilerm](https://github.com/akhilerm))
-  * ability to disable reconciliation for NDM resources ([#307](https://github.com/openebs/node-disk-manager/pull/307),
+  * ability to disable reconciliation for NDM resources ([#307](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/307),
   [@akhilerm](https://github.com/akhilerm))
 
 v0.4.5-RC2 / 2019-12-12
 ========================
    
-  * ability to disable reconciliation for NDM resources ([#307](https://github.com/openebs/node-disk-manager/pull/307),
+  * ability to disable reconciliation for NDM resources ([#307](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/307),
   [@akhilerm](https://github.com/akhilerm))
 
 v0.4.5-RC1 / 2019-12-05
 ========================
   
-  * fixed security vulnerability in images used in cleanup pods ([#351](https://github.com/openebs/node-disk-manager/pull/351), 
+  * fixed security vulnerability in images used in cleanup pods ([#351](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/351), 
   [@kmova](https://github.com/kmova))
-  * added disk hierarchy information to the daemon logs ([#353](https://github.com/openebs/node-disk-manager/pull/353), 
+  * added disk hierarchy information to the daemon logs ([#353](https://github.com/aamir-tiwari-sumo/node-disk-manager/pull/353), 
   [@akhilerm](https://github.com/akhilerm))
 
 v0.4.4 / 2019-11-12

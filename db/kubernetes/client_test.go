@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/openebs/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
 	"github.com/stretchr/testify/assert"
 	"k8s.io/client-go/rest"
 	"sigs.k8s.io/controller-runtime/pkg/client"

@@ -1,6 +1,3 @@
-//go:build linux && cgo
-// +build linux,cgo
-
 /*
 Copyright 2018 The OpenEBS Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,7 +33,7 @@ package seachest
 import "C"
 import (
 	"fmt"
-	"github.com/openebs/node-disk-manager/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
 	"unsafe"
 
 	"k8s.io/klog/v2"

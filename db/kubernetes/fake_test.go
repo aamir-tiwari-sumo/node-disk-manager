@@ -17,8 +17,8 @@ limitations under the License.
 package kubernetes
 
 import (
-	api "github.com/openebs/node-disk-manager/api/v1alpha1"
-	"github.com/openebs/node-disk-manager/blockdevice"
+	api "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/blockdevice"
 )
 
 func createFakeBlockDevice(uuid string) *blockdevice.BlockDevice {

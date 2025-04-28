@@ -20,8 +20,8 @@ import (
 	"net"
 	"os"
 
-	"github.com/openebs/node-disk-manager/api-service/node/services"
-	protos "github.com/openebs/node-disk-manager/spec/ndm"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/api-service/node/services"
+	protos "github.com/aamir-tiwari-sumo/node-disk-manager/spec/ndm"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"

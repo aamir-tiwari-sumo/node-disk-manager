@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"testing"
 
-	openebsv1alpha1 "github.com/openebs/node-disk-manager/api/v1alpha1"
-	ndm "github.com/openebs/node-disk-manager/cmd/ndm_daemonset/controller"
+	openebsv1alpha1 "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	ndm "github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/controller"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

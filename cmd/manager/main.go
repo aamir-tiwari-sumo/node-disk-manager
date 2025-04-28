@@ -22,8 +22,6 @@ import (
 	goruntime "runtime"
 	"time"
 
-	"github.com/openebs/node-disk-manager/pkg/env"
-
 	// Import all Kubernetes client auth plugins (e.g. Azure, GCP, OIDC, etc.)
 	// to ensure that exec-entrypoint and run can make use of them.
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
@@ -36,10 +34,10 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 
-	openebsv1alpha1 "github.com/openebs/node-disk-manager/api/v1alpha1"
-	"github.com/openebs/node-disk-manager/pkg/controllers/blockdevice"
-	"github.com/openebs/node-disk-manager/pkg/controllers/blockdeviceclaim"
-	"github.com/openebs/node-disk-manager/pkg/version"
+	openebsv1alpha1 "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/controllers/blockdevice"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/controllers/blockdeviceclaim"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/version"
 	//+kubebuilder:scaffold:imports
 )
 
@@ -80,18 +78,8 @@ func main() {
 
 	ctrl.SetLogger(klogr.New())
 
-	ns, err := env.GetWatchNamespace()
-	if err != nil {
-		setupLog.Error(err, "unable to get watch namespace")
-		os.Exit(1)
-	}
-
 	mgr, err := ctrl.NewManager(ctrl.GetConfigOrDie(), ctrl.Options{
-		Namespace:              ns,
 		Scheme:                 scheme,
-		MetricsBindAddress:     metricsAddr,
-		Port:                   8787,
-		SyncPeriod:             &reconInterval,
 		HealthProbeBindAddress: probeAddr,
 		LeaderElection:         enableLeaderElection,
 		LeaderElectionID:       "node-disk-operator.openebs.io",

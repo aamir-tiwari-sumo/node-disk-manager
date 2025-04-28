@@ -19,11 +19,11 @@ package sanity
 import (
 	"context"
 
-	apiservice "github.com/openebs/node-disk-manager/cmd/ndm_daemonset/grpc"
-	"github.com/openebs/node-disk-manager/integration_tests/k8s"
-	"github.com/openebs/node-disk-manager/integration_tests/udev"
-	"github.com/openebs/node-disk-manager/integration_tests/utils"
-	protos "github.com/openebs/node-disk-manager/spec/ndm"
+	apiservice "github.com/aamir-tiwari-sumo/node-disk-manager/cmd/ndm_daemonset/grpc"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/k8s"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/udev"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/integration_tests/utils"
+	protos "github.com/aamir-tiwari-sumo/node-disk-manager/spec/ndm"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

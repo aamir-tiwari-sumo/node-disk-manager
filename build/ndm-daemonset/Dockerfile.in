@@ -18,6 +18,11 @@
 #Set the base image
 FROM @BASEIMAGE@
 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends iputils-ping && \
+    apt-get autoremove --purge -y && \
+    rm -rf /var/lib/apt/lists/*
+
 ARG ARCH
 ARG DBUILD_DATE
 ARG DBUILD_REPO_URL

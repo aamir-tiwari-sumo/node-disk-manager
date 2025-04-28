@@ -19,7 +19,7 @@ import (
 	"strconv"
 	"strings"
 
-	protos "github.com/openebs/node-disk-manager/spec/ndm"
+	protos "github.com/aamir-tiwari-sumo/node-disk-manager/spec/ndm"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

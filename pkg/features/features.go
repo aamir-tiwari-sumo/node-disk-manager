@@ -28,7 +28,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/openebs/node-disk-manager/pkg/util"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/util"
 
 	"k8s.io/klog/v2"
 )
@@ -53,7 +53,7 @@ const (
 
 	// PartitionTableUUID feature flag is used to enable use a
 	// partition table uuid instead of create partition described in
-	// https://github.com/openebs/node-disk-manager/issues/621 .
+	// https://github.com/aamir-tiwari-sumo/node-disk-manager/issues/621 .
 	// This feature must enabled with GPTBasedUUID.
 	PartitionTableUUID Feature = "PartitionTableUUID"
 )

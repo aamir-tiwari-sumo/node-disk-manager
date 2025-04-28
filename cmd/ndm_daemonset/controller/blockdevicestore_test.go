@@ -22,7 +22,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	apis "github.com/openebs/node-disk-manager/api/v1alpha1"
+	apis "github.com/aamir-tiwari-sumo/node-disk-manager/api/v1alpha1"
 )
 
 // mockEmptyDeviceCr returns BlockDevice object with minimum attributes it is used in unit test cases.

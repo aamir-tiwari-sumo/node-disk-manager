@@ -24,7 +24,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/openebs/node-disk-manager/pkg/features"
+	"github.com/aamir-tiwari-sumo/node-disk-manager/pkg/features"
 )
 
 var ErrCouldNotFindRootDevice = fmt.Errorf("could not find root device")
